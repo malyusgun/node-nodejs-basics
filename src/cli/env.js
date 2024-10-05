@@ -1,5 +1,8 @@
 const parseEnv = () => {
-    // Write your code here 
+    console.log('Env variables:');
+    Object.entries(process.env).forEach(([key, value]) => {
+        console.log(`RSS_${key}=${value};`);
+    })
 };
 
 parseEnv();
